@@ -1,7 +1,4 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
 # 01-solution2.py – copy table from dbms A to dbms B
-# as of 2021-04-07 bw
 
 from BWDB import BWDB, BWErr
 

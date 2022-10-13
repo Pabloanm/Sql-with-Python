@@ -1,8 +1,4 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# cgi-test.py by Bill Weinman
 # Python version of CGI testing script
-# as of 2021-04-07 bw
 
 from os import environ
 from platform import python_version

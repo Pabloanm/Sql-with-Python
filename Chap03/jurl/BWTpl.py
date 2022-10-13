@@ -1,9 +1,3 @@
-#!/usr/bin/python3
-# bwTL - BW's template library
-# by Bill Weinman [http://bw.org/]
-# Copyright 1995-2021 The BearHeart Group LLC
-# as of 2021-04-16
-
 import re
 
 __version__ = '0.7.3'

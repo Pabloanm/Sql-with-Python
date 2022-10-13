@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# db-query.py as of 2021-04-07 bw
-
 import sqlite3
 
 
@@ -19,13 +15,22 @@ def main():
     cur.execute("SELECT * FROM temp")
     '''
     #Alt 1 Iteration
+    # iterate rows one by one
     row = cur.fetchone()
     while row:
         print(row)
         row = cur.fetchone()
     '''
+    '''
     # Alt 2 Iteration
+    # clean code - iterate rows one by one
     for row in cur:
+        print(row)
+    '''
+    # Alt 3 Iteration
+    # fetch all the raws in the table, i need memory to hold all data.
+    rows = cur.fetchall()
+    for row in rows:
         print(row)
 
     cur.execute("DROP TABLE IF EXISTS temp")

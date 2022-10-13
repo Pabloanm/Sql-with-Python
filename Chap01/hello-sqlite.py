@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# as of 2021-04-07 bw
-
 import sqlite3
 
 
@@ -51,6 +47,7 @@ def main():
             ('eight', 'nine', 'ten'),
             ('nine', 'ten', 'eleven'),
         )
+        #insert this 9 rows three times = 27 rows
         cur.executemany("INSERT INTO hello (a, b, c) VALUES (?, ?, ?)", row_data)
         count = cur.rowcount
         cur.executemany("INSERT INTO hello (a, b, c) VALUES (?, ?, ?)", row_data)

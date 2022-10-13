@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# 02-solution.py – a simple cli crud
-# as of 2021-04-07 bw
-
 from jurl.BWDB import BWDB, BWErr
 
 

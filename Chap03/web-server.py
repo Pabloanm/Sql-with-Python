@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# simple python web server
-# as of 2021-04-07 bw
-
 from http.server import HTTPServer, CGIHTTPRequestHandler
 
 

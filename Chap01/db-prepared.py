@@ -1,18 +1,15 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# as of 2021-04-10 bw
+#you need to create database "scratch"
 
 import mysql.connector as mysql
 
-
-MY_HOST = 'pluto.local'
-MY_USER = 'appuser'
-MY_PASS = 'Spartacus'
+MY_HOST = 'localhost'
+MY_USER = 'root'
+MY_PASS = ''
 
 
 def main():
     db = mysql.connect(host=MY_HOST, user=MY_USER, password=MY_PASS, database='scratch')
-    cur = db.cursor(prepared=True)
+    cur = db.cursor(prepared=True) # to use prepared statements
 
     cur.execute("DROP TABLE IF EXISTS temp")
     cur.execute("CREATE TABLE IF NOT EXISTS temp ( a TEXT, b TEXT, c TEXT )")
@@ -25,7 +22,7 @@ def main():
         print(row)
 
     query = "SELECT * FROM temp WHERE a = ?"
-    cur.execute(query, ('four',))
+    cur.execute(query, ('four',)) # if you only have one value in the tuple, you need that comma to make it actually create a tuple
 
     for row in cur:
         print(f"result is {row}")

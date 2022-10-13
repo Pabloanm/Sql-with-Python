@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# 01-solution2.py – copy table from dbms A to dbms B
-# as of 2021-04-10 bw
-
 import sqlite3
 import mysql.connector as mysql
 

@@ -1,10 +1,4 @@
-#!/usr/bin/env python3
-#
-# jurl.py by Bill Weinman <https://bw.org/contact/>
 # Jump to URL (a private short URL service)
-# Copyright (c) 2010-2021 The BearHeart Group, LLC
-# updated 2021-04-16 for Using SQL With Python
-#
 
 from BWDB import BWDB
 from BWCGI import BWCGI

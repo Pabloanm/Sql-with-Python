@@ -1,13 +1,9 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# as of 2021-04-07 bw
-
 import mysql.connector as mysql
 
 
-MY_HOST = 'pluto.local'
-MY_USER = 'appuser'
-MY_PASS = 'Spartacus'
+MY_HOST = 'localhost'
+MY_USER = 'root'
+MY_PASS = ''
 
 
 def main():

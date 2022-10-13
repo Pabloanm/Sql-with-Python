@@ -1,8 +1,3 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# BWDB-SQL.py as of 2021-04-11 bw
-
-
 # module version
 __version__ = "3.1.3"
 

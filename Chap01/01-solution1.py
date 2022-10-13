@@ -1,15 +1,22 @@
-#!/usr/bin/env python3
-# Copyright 2021 BHG [bw.org]
-# 01-solution1.py – copy table from mysql to sqlite3
-# as of 2021-04-10 bw
+'''
+Copy from MySQL to SQLite
+- Connect to both MySQL and SQLite
+- Create a table on both systems
+- Add rows of data to the table on MySQL
+- Copy the data from the MySQL table to the SQLite table
+- Close both connections
+
+- Bonus project - turn it around
+- About 30 min to 1 hour
+'''
 
 import sqlite3
 import mysql.connector as mysql
 
 
-MY_HOST = 'pluto.local'
-MY_USER = 'appuser'
-MY_PASS = 'Spartacus'
+MY_HOST = 'localhost'
+MY_USER = 'root'
+MY_PASS = ''
 
 
 def main():

@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-#
-# db.py by Bill Weinman <https://bw.org/contact/>
 # This is part of jurl - Jump to URL (a private short URL service)
-# Copyright (c) 2010-2021 The BearHeart Group, LLC
-# update 2021-04-16 - for SQL with Python
+
 
 import sys
 import os
